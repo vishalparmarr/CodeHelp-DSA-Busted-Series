@@ -1,4 +1,11 @@
-#include<iostream>
+/*
+    * * * * *
+    * * * * *
+    * * * * *
+    * * * * *
+*/
+
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -6,17 +13,19 @@ int main() {
     int n;
     cin >> n;
 
-    int i = 1;
+    int i = 0;
 
-    while(i<=n) {
+    while (i < n) {
         
-        int j = 1;
-        while(j<=n) {
-            cout<< "*";
-            j = j+1; 
-        }
-        cout<<endl;
+        int j = 0;
 
-        i = i+1;
+        while (j < n) {
+        
+            cout << "* ";
+            j++; 
+        }
+
+        cout << endl;
+        i++;
     } 
 }

@@ -1,8 +1,8 @@
 /*
-    *
-    * *
-    * * *
     * * * *
+    * * *
+    * *
+    *        
 */
 
 #include <iostream>
@@ -13,9 +13,9 @@ int main() {
     int n;
     cin >> n;
 
-    int i = 1;
+    int i = n;
 
-    while (i <= n) {
+    while (i >= n) {
 
         int j = 1;
 
@@ -26,6 +26,6 @@ int main() {
         }
 
         cout << endl;
-        i++;
+        i--;
     }
 }

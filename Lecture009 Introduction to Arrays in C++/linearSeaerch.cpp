@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 bool search(int arr[], int size, int key) {

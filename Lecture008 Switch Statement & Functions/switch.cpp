@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -9,21 +9,18 @@ int main() {
     cout << endl;
     switch( 2*num ) {
 
-        case 2: cout << "First" <<endl;
-                cout << " First again " <<endl;
+        case 2: cout << "First" << endl;
+                cout << "First again" << endl;
                 break;
 
         case '1': switch(num) {
-                    case 1: cout<<" Value of num is "<< num <<endl;
+                    case 1: cout <<"Value of num is = " << num << endl;
                     break;
                  }
                 break;
 
-        default: cout << " It is default case" <<endl;        
+        default : cout << "It is default case" << endl;        
 
     }
-
     cout << endl;
-
-    return 0;
 }

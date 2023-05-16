@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -9,11 +9,11 @@ int main() {
     int i = 1;
     int sum = 0;
 
-    while(i<=n) {
+    while(i <= n) {
         sum = sum + i;
-        i = i + 1;
+        i++;
     }
 
-    cout<< "value of sum is "<<sum<<endl;
+    cout << "Value of sum is "<< sum << endl;
 
 }

@@ -1,15 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-// HOLD
 void printArray(int arr[], int size) {
 
     cout<< " printing the array " << endl;
     //print the array
-    for(int i =0; i<size; i++) {
+    for(int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
-    cout<< " printing DONE " << endl;
+    cout<< "Printing DONE" << endl;
 }
 
 int main() {
