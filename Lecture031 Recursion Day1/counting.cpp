@@ -1,4 +1,4 @@
-#include<iostream> 
+#include <iostream> 
 using namespace std;
 
 void print(int n) {
@@ -9,7 +9,6 @@ void print(int n) {
 
     //Recursive relation
     print(n-1);
-
     cout << n << endl;
 }
 
@@ -19,7 +18,4 @@ int main() {
     cin >> n;
     cout << endl;
     print(n);
-
-
-    return 0;
 }

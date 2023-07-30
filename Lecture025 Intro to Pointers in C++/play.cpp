@@ -1,7 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main () {
+int main() {
 
     //pointer to int is created, and pointing to some garbage address
     //int *p = 0; 
@@ -45,10 +45,8 @@ int main () {
    //cout <<  (*t)++ << endl;
    *t = *t +1;
     cout << *t << endl;
-    cout << " before t " << t << endl;
+    cout << "before t " << t << endl;
     t = t + 1;
-    cout << " after t " << t << endl;
+    cout << "after t " << t << endl;
 
-
-    return 0;
 }

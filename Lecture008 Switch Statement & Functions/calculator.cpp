@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main(){
     
     int a, b;
 
@@ -34,5 +34,4 @@ int main() {
 
         default: cout << "Please enter a valid Operation " << endl;
     }
-    return 0;
 }

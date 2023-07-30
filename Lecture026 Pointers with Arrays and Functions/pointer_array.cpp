@@ -1,7 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main () {
+int main() {
 
     //int arr[10] = {23, 122, 41, 67};
 
@@ -20,7 +20,6 @@ int main () {
     int i = 3;
     cout << i[arr] << endl;
 
-
    int temp[10] = {1,2};
    cout << sizeof(temp) << endl;
    cout << " 1st " <<  sizeof(*temp) << endl;
@@ -30,8 +29,6 @@ int main () {
    cout << sizeof(ptr) << endl ;
    cout << sizeof(*ptr) << endl ;
    cout << sizeof(&ptr) << endl ;
-
-
 
    int a[20] = {1,2,3,5};
    //cout << " ->" << &a[0] << endl;
@@ -55,10 +52,4 @@ int main () {
     ptr = ptr + 1;
     cout << ptr << endl;
 
-
-
-
-
-
-    return  0;
 }

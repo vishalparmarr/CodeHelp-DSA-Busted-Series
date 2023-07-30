@@ -1,20 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
 
     int n;
-    cin>>n;
+    cin >> n;
 
     int row = 1;
 
-    while(row <= n) {
+    while (row <= n) {
 
         //Print karo space (1st triangle)
         int space = n - row ;
-        while(space) {
-            cout<<" ";
-            space = space -1;
+        while ( space ) {
+
+            cout << " ";
+            space = space - 1;
         }
 
         //print 2nd triangle 
@@ -25,7 +26,6 @@ int main() {
         }
 
         //print 3rd triangle
-
         int start = row - 1;
         while(start) {
             cout<<start;

@@ -1,8 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int score = 15;
-
 
 void a(int& i) {
 

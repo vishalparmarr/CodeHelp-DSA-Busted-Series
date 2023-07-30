@@ -5,14 +5,13 @@ using namespace std;
 void printCounting(int num) {
 
     //Function Body 
-    for(int i = 1; i <= num; i++) {
+    for(int i = 1; i <= num; i++)
         cout<< i << " ";
-    }
-
+    
     cout<<endl;
 }
 
-int main() {
+int main(){
 
     int n;
     cin >> n;
@@ -20,5 +19,4 @@ int main() {
     //function Call
     printCounting(n);
     
-    return 0;
 }

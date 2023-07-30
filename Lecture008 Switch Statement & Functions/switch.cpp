@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main(){
     
     char ch = '1';
     int num = 1;

@@ -1,7 +1,5 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-
 
 inline int getMax(int& a, int& b) {
     return (a>b) ? a : b;
@@ -20,8 +18,4 @@ int main() {
 
     ans = getMax(a,b);
     cout << ans << endl;
-
-
-
-    return 0;
 }

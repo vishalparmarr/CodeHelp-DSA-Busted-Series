@@ -13,7 +13,7 @@ int findUnique(int arr[], int size) {
 
 int main(){
 
-    int arr[5] = {3,4,3,5,4};
+    int arr[5] = {3, 4, 3, 5, 4};
 
     int ans = findUnique(arr, 5);
     cout << ans;

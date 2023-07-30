@@ -13,8 +13,5 @@ int main() {
     cin >> n;
 
     dummy(n);
-
     cout << "number n is " << n << endl;
-    
-    return 0;
 }

@@ -7,10 +7,9 @@ bool isPrime(int n) {
 
    for(int i = 2; i < n; i++){
 
-       if(n % i == 0) {
+       if(n % i == 0) 
        //divide hogya h , not a prime no.
-          return 0;
-        }
+         return 0;  
    }
    return 1;
 }

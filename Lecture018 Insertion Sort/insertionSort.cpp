@@ -9,23 +9,25 @@ void insertionSort(vector<int> &arr){
         int temp = arr[i];
         int j = i - 1;
 
-        for(; j >= 0; j--){
+        for(; j >= 0; j--) {
             
-            if(arr[j] > temp) {
-                //shift
+            if(arr[j] > temp) 
+
                 arr[j+1] = arr[j];
-            }
-            else { // ruk jao
+            
+            else 
                 break;
-            }            
+                     
         }
-        //copy temp value
         arr[j+1] = temp;  
     } 
 }
 
 int main(){
 
-    vector<int> a;
+    vector<int> arr = {4,52,5,2,15,67,2,35,67,78};
+    insertionSort(arr);
 
+    for(int i = 0; i < arr.size(); i++)
+        cout << arr[i] << " ";
 }

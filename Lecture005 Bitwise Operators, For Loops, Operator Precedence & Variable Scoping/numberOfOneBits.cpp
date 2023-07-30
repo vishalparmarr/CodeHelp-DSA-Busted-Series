@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
     int hammingWeight(int n) {
@@ -14,3 +17,9 @@ public:
         return count;
     }
 };
+
+int main(){
+
+    Solution s1;
+    cout << s1.hammingWeight(6);
+}

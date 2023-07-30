@@ -29,7 +29,7 @@ int getMax(int num[], int n) {
          //   max = num[i];
        // }
     }
-    //returning max value
+    //returning max value 
     return maxi;
 }
 
@@ -41,12 +41,10 @@ int main() {
     int num[100];
 
     //taking input in array
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < size; i++)
         cin >> num[i];
-    }
 
-    cout << " Maximum value is " << getMax(num, size) << endl;
-    cout << " Minimum value is " << getMin(num, size) << endl;
+    cout << "Maximum value is = " << getMax(num, size) << endl;
+    cout << "Minimum value is = " << getMin(num, size) << endl;
 
-    return 0;
 }
