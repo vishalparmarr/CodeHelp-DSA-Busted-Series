@@ -1,4 +1,4 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Hero {
@@ -96,16 +96,6 @@ int main() {
     // cout << b.timeToComplete << endl;
 
 
-
-
-
-
-
-
-
-
-
-
     // //Static
     // Hero a;
 
@@ -113,11 +103,6 @@ int main() {
     // Hero *b = new Hero();
     // //manually destructor call
     // delete b;
-
-
-
-
-
 
 
 //     Hero hero1;
@@ -147,20 +132,6 @@ int main() {
 //     hero2.print();
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
     // //Hero tt;
 
     // //object created statically
@@ -174,18 +145,6 @@ int main() {
 
     // Hero temp(22, 'B');
     // temp.print();
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /*
@@ -209,7 +168,6 @@ int main() {
     */
     
 
-
     // //creation of Object
     // Hero ramesh;   
     // cout << "Size of Ramesh is " << sizeof(ramesh) << endl;
@@ -219,12 +177,10 @@ int main() {
     // ramesh.setHealth(70);
     // ramesh.level = 'A';
 
-
     // cout << "health is: " << ramesh.getHealth() << endl; 
     // cout << "Level is: " << ramesh.level << endl; 
 
     // //cout << "size : " << sizeof(h1) << endl;
-
 
     return 0;
 }

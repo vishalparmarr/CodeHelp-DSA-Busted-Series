@@ -1,4 +1,4 @@
-#include<iostream> 
+#include <iostream> 
 using namespace std;
 
 void reachHome(int src, int dest) {
@@ -6,7 +6,7 @@ void reachHome(int src, int dest) {
     cout << "source " << src  << " destination " << dest << endl;
     //base case
     if(src == dest) {
-        cout << " pahuch gya " << endl;
+        cout << "pahuch gya" << endl;
         return ;
     }
 
@@ -15,7 +15,6 @@ void reachHome(int src, int dest) {
 
     //recursive call
     reachHome(src, dest);
-
 }
 
 int main() {
@@ -26,7 +25,4 @@ int main() {
     cout << endl;
 
     reachHome(src, dest);
-
-
-    return 0;
 }

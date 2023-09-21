@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Student {
@@ -17,7 +17,6 @@ class Student {
 int main() {
 
     Student first;
-
     cout << "Sab sahi chalra hai" << endl;
 
     return 0;

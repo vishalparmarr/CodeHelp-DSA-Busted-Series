@@ -1,4 +1,4 @@
-#include<iostream> 
+#include <iostream> 
 using namespace std;
 
 void sayDigit(int n, string arr[]) {
@@ -11,12 +11,10 @@ void sayDigit(int n, string arr[]) {
     int digit = n % 10;
     n = n / 10;
     
-
     //recursive call
     sayDigit(n, arr);
 
     cout << arr[digit] << " ";
-
 }
 
 int main() {
@@ -30,7 +28,4 @@ int main() {
     cout << endl << endl << endl ;
     sayDigit(n, arr);
     cout << endl << endl << endl ;
-
-
-    return 0;
 }

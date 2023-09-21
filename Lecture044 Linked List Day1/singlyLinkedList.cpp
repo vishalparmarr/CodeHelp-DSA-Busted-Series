@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Node {
@@ -8,8 +8,8 @@ class Node {
     Node* next;
 
     //constructor
-    Node(int data) {
-        this -> data = data;
+    Node(int d) {
+        this -> data = d;
         this -> next = NULL;
     }
 
@@ -17,13 +17,12 @@ class Node {
     ~Node() {
         int value = this -> data;
         //memory free
-        if(this->next != NULL) {
+        if(this ->next != NULL) {
             delete next;
-            this->next = NULL;
+            this -> next = NULL;
         }
         cout << " memory is free for node with data " << value << endl;
     }
-
 };
 
 void insertAtHead(Node* &head, int d) {

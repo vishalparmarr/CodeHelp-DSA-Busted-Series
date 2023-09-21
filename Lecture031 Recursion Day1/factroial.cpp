@@ -1,4 +1,4 @@
-#include<iostream> 
+#include <iostream> 
 using namespace std;
 
 int factorial(int n) {
@@ -21,6 +21,4 @@ int main() {
     int ans = factorial(n);
 
     cout << ans << endl;
-
-    return 0;
 }

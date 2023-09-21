@@ -1,9 +1,11 @@
-#include<iostream>
+// Modes of Inheritance (Access specifiers)
+
+#include <iostream>
 using namespace std;
 
 class Human {
 
-    private:
+    public:
     int height;
 
     public: 
@@ -19,9 +21,7 @@ class Human {
 
     void setWeight(int w) {
         this->weight = w;
-
     }
-
 };
 
 class Male: private Human {
@@ -46,8 +46,6 @@ int main() {
     Male m1;
     //cout << m1.height << endl;
 
-
-
 /*
     Male object1;
     cout << object1.age << endl;
@@ -60,6 +58,4 @@ int main() {
     cout << object1.weight << endl;
     object1.sleep();
     */
-
-    return 0;
 }

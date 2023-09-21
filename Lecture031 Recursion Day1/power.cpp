@@ -1,4 +1,4 @@
-#include<iostream> 
+#include <iostream> 
 using namespace std;
 
 int power(int n) {
@@ -19,6 +19,4 @@ int main() {
     int ans = power(n);
 
     cout << ans << endl;
-
-    return 0;
 }
