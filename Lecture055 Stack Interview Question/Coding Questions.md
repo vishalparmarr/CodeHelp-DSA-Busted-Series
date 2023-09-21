@@ -1,12 +1,12 @@
 # Coding Question
 
-1. Delete Middle Element in Stack: [tittle](https://bit.ly/3ovTIu2),
-2. Valid Parenthesis: [tittle](https://bit.ly/34kxPaq),
-3. InsertAtBottom in Stack: [tittle](https://bit.ly/34qqmGL),
-4. Reverse a Stack using recursion: [tittle](https://bit.ly/3HCBnD4),
-5. Sort a Stack using recursion: [tittle](https://bit.ly/3snpr1B),
-6. Redundant Brackets: [tittle](https://bit.ly/3srTkOv),
-7. Minimum bracket Reversal: [tittle](https://bit.ly/3GAYRr5)
+1. Delete Middle Element in Stack: [](https://bit.ly/3ovTIu2),
+2. Valid Parenthesis: [](https://bit.ly/34kxPaq),
+3. InsertAtBottom in Stack: [](https://bit.ly/34qqmGL),
+4. Reverse a Stack using recursion: [](https://bit.ly/3HCBnD4),
+5. Sort a Stack using recursion: [](https://bit.ly/3snpr1B),
+6. Redundant Brackets: [](https://bit.ly/3srTkOv),
+7. Minimum bracket Reversal: [](https://bit.ly/3GAYRr5)
 
 ``` cpp
 1. void solve(stack<int>&inputStack, int count, int size){
@@ -29,8 +29,8 @@ void deleteMiddle(stack<int>&inputStack, int N){
 
     int count = 0;
     solve(inputStack, count, N);
-}
-
+}```
+``` cpp
 2. bool isValidParenthesis(string s)
 {
     stack<char> st;
@@ -69,8 +69,8 @@ void deleteMiddle(stack<int>&inputStack, int N){
         return true;
     else
         return false;
-}
-
+}```
+```cpp
 3. void solve(stack<int>& myStack, int x){
 
      //base case
@@ -88,8 +88,8 @@ void deleteMiddle(stack<int>&inputStack, int N){
 stack<int> pushAtBottom(stack<int>& myStack, int x) {
    solve(myStack, x);
    return myStack;
-}
-
+}```
+```cpp
 4. void insertAtBottom(stack<int>& stack, int x){
 
      //base case
@@ -118,8 +118,8 @@ void reverseStack(stack<int> &stack) {
     reverseStack(stack);
 
     insertAtBottom(stack, num);
-}
-
+}```
+```cpp
 5. void Sorted(stack<int> &stack, int num){
 
 //base case
@@ -150,8 +150,8 @@ stack.pop();
 sortStack(stack);
 
 Sorted(stack, num);
-}
-
+}```
+```cpp
 6. void Sorted(stack<int> &stack, int num){
 
 //base case
@@ -182,6 +182,4 @@ stack.pop();
 sortStack(stack);
 
 Sorted(stack, num);
-}
-
-```
+}```
