@@ -15,7 +15,7 @@
 7. Minimum bracket Reversal: [https://bit.ly/3GAYRr5]
 
 ``` cpp
-1.  void  solve(stack<int>&inputStack, int count, int size){
+1.  void solve(stack<int>&inputStack, int count, int size){
 
 //base condition
 if(count == (size/2)){
@@ -32,7 +32,7 @@ solve(inputStack, count+1, size);
 inputStack.push(num);
 }
 
-void  deleteMiddle(stack<int>&inputStack, int  N){
+void deleteMiddle(stack<int>&inputStack, int  N){
 
 int count = 0;
 solve(inputStack, count, N);
@@ -40,7 +40,7 @@ solve(inputStack, count, N);
 ```
 
 ```cpp
-2.  bool  isValidParenthesis(string s) {
+2.  bool isValidParenthesis(string s) {
 
 stack<char> st;
 
@@ -81,7 +81,7 @@ return  false;
 ```
 
 ```cpp
-3.  void  solve(stack<int>& myStack, int x){
+3.  void solve(stack<int>& myStack, int x){
 
 //base case
 if(myStack.empty()){
@@ -104,7 +104,7 @@ return myStack;
 ```
 
 ```cpp
-4.  void  insertAtBottom(stack<int>& stack, int x){
+4.  void insertAtBottom(stack<int>& stack, int x){
 
 //base case
 if(stack.empty()){
@@ -120,7 +120,7 @@ insertAtBottom(stack, x);
 stack.push(num);
 }
 
-void  reverseStack(stack<int> &stack) {
+void reverseStack(stack<int> &stack) {
 
 //base case
 if(stack.empty())
@@ -137,39 +137,7 @@ insertAtBottom(stack, num);
 ```
 
 ```cpp
-5. void  Sorted(stack<int> &stack, int num){
-
-//base case
-if(stack.empty() || (stack.top() < num)){
-stack.push(num);
-return;
-}
-
-int n = stack.top();
-stack.pop();
-
-//Recursive call
-Sorted(stack, num);
-stack.push(n);
-}
-
-void  sortStack(stack<int> &stack) {
-
-//base case
-if(stack.empty())
-return;
-
-int num = stack.top();
-stack.pop();
-
-//Recursive Call
-sortStack(stack);
-Sorted(stack, num);
-}
-```
-
-```cpp
-6. void  Sorted(stack<int> &stack, int num){
+5. void Sorted(stack<int> &stack, int num){
 
 //base case
 if(stack.empty() || (stack.top() < num)){
@@ -196,7 +164,85 @@ stack.pop();
 
 //Recursive Call
 sortStack(stack);
-
 Sorted(stack, num);
 }
+```
+
+```cpp
+6. bool findRedundantBrackets(string &s) {
+    
+    stack<char> st;
+    
+    for(int i = 0; i < s.length(); i++){
+
+        char ch = s[i];
+        
+        if(ch == '(' || ch == '+' || ch == '*' || ch == '-' || ch == '/') 
+            st.push(ch);
+
+        else{
+            //Closing bracket or lower case letter  
+            if(ch == ')'){
+                bool isRedundant = true;
+                
+                while (st.top() != '('){
+                    char top = st.top();
+
+                    if (top == '+' || top == '*' || top == '-' || top == '/') 
+                      isRedundant = false;
+
+                      st.pop();
+                }
+            if (isRedundant == true)
+                return true;
+
+            st.pop();
+            }
+        }
+    }
+    return false;
+}
+```
+
+``` cpp
+7. int findMinimumCost(string str) {
+  
+  //odd condition
+  if(str.length() % 2 == 1)
+    return -1;
+
+  stack<char> s;
+  
+  for(int i = 0; i < str.length(); i++){
+
+    char ch = str[i];
+    //Opening bracket
+    if(ch == '{')
+      s.push(ch);
+
+    else {
+      // Closing bracket
+      if (!s.empty() && s.top() == '{')
+        s.pop();
+      
+      else  
+        s.push(ch);
+    }
+  }
+
+  //stack invalid expression
+  int a = 0, b = 0;
+  while(!s.empty()){
+  
+    if(s.top() == '{')
+      a++;
+    
+    else 
+      b++;
+
+  s.pop();
+  }
+  int ans = (a+1)/2 + (b+1)/2;
+  return ans;
+} 
 ```
