@@ -18,5 +18,4 @@ int main() {
 
     int answer = power(c, d);
     cout << "Answer is " << answer << endl;
-
 }

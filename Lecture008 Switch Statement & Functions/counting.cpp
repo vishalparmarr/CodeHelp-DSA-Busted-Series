@@ -18,5 +18,4 @@ int main(){
 
     //function Call
     printCounting(n);
-    
 }

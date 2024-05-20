@@ -6,8 +6,7 @@ int main(){
     char ch = '1';
     int num = 1;
 
-    cout << endl;
-    switch( 2*num ) {
+    switch( 2 * num ) {
 
         case 2: cout << "First" << endl;
                 cout << "First again" << endl;
@@ -20,7 +19,5 @@ int main(){
                 break;
 
         default : cout << "It is default case" << endl;        
-
     }
-    cout << endl;
 }

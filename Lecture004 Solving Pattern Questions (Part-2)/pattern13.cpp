@@ -1,6 +1,6 @@
 /*
- A A A
- B B B
+ A 
+ B B 
  C C C
 */
 
@@ -17,7 +17,7 @@ int main() {
 
         int col = 1;
 
-        while(col <= n) {
+        while(col <= row) {
             char ch = 'A' + row - 1;
             cout << ch << " ";
             col = col + 1;

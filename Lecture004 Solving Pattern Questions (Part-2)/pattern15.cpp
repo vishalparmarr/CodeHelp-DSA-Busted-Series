@@ -1,7 +1,7 @@
 /*
- A A A
- B B B
- C C C
+ C 
+ B C
+ A B C
 */
 
 #include <iostream>
@@ -13,13 +13,14 @@ int main() {
     cin >> n;
 
     int row = 1;
+
     while(row <= n) {
 
         int col = 1;
-
-        while(col <= n) {
-            char ch = 'A' + row - 1;
-            cout << ch << " ";
+        char start = 'A' + n - row;
+        while(col <= row) {
+            cout << start;
+            start = start + 1;
             col = col + 1;
         }
         cout << endl;

@@ -8,6 +8,7 @@ bool search(int arr[], int size, int key) {
         if (arr[i] == key) 
             return 1;
     }
+    
     return 0;
 }
 

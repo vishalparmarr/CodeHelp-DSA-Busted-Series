@@ -17,7 +17,6 @@ void sortOne(int arr[], int n) {
 
         while(arr[left] == 0 && left < right ) 
             left++;
-        
 
         while(arr[right]==1 && left < right)
             right--;
@@ -39,6 +38,4 @@ int main() {
 
     sortOne(arr, 8);
     printArray(arr, 8);
-    
-    return 0;
 }

@@ -11,9 +11,10 @@ int main() {
 
     while(i < n) {
 
-        if(n % i == 0)
+        if(n % i == 0) {
             f = 0;
-
+            break;
+        }
         else
             f == 1;
 
@@ -22,7 +23,6 @@ int main() {
 
     if (f == 0)
         cout << "Not prime Number" << endl;
-    
     else
         cout << "Prime Number" << endl;
 }

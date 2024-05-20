@@ -10,8 +10,5 @@ int main() {
         continue;
 
         cout << "Reply toh karde" << endl;
-
     }
-    
-    return 0;
 }

@@ -1,24 +1,27 @@
-#include<iostream>
+/*
+ 1
+ 2 3 
+ 3 4 5 
+ 4 5 6 7
+ */
+
+#include <iostream>
 using namespace std;
 
 int main() {
-
     int n;
-    cin>>n;
+    cin >> n;
 
-    int row = 1;
+    int i = 1;
+    
+    while(i <= n) {
 
-    while(row <= n) {
-
-        int col = 1;
-        char start = 'A' + n - row;
-        while(col <= row) {
-            cout<< start;
-            start = start + 1;
-            col = col + 1;
+        int j = 1;
+        while(j <= i) {
+           cout << (i + j - 1) << " ";
+            j = j + 1;
         }
-        cout<< endl;
-        row = row + 1;
+        cout << endl;
+        i = i + 1;
     }
-    return 0;
 }

@@ -1,3 +1,5 @@
+// Fibonacci Series
+
 #include <iostream>
 using namespace std;
 
@@ -18,7 +20,7 @@ void fibonacci(int n){
     }
 }
 
-int main(){
+int main() {
 
     int n;
     cin >> n;

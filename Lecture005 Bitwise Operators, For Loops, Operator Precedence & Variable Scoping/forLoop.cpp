@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
 
     int n;
     //cout << "Enter the value of n" <<endl;
@@ -9,10 +9,9 @@ int main(){
 
     cout<<"printing count from 1 to n" << endl;
     int i = 1;
-    for(; ; ){
+    for(; ; ) {           //Omit Statement
         if(i<=n)
             cout<< i << endl;
-        
         else
             break;
          

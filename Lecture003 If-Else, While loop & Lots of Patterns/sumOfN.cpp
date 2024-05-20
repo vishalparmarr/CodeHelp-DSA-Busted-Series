@@ -13,7 +13,5 @@ int main() {
         sum = sum + i;
         i++;
     }
-
     cout << "Value of sum is "<< sum << endl;
-
 }

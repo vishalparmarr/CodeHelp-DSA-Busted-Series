@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 int main() {
 
     int a = 4;
@@ -27,5 +26,4 @@ int main() {
     //9 , i = 8 
     cout << (--i) << endl; 
     // 7, i =7
-    return 0;
 }

@@ -1,21 +1,26 @@
+/*
+ 1 2 3
+ 1 2 3
+ 1 2 3
+ */
+
 #include<iostream>
 using namespace std;
 
 int main() {
     int n;
-    cin>>n;
+    cin >> n;
 
     int i = 1;
 
-    while(i<=n) {
+    while(i <= n) {
 
-        int j =1;
-        while(j<=n) {
-            cout<<n-j+1;
+        int j = 1;
+        while(j <= n) {
+            cout << j << " ";
             j = j + 1;
         }
-        cout<<endl;
+        cout << endl;
         i = i + 1;
     }
-    return 0;
 }
