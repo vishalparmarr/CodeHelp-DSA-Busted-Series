@@ -1,8 +1,9 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+# Coding Questions :-
 
-void selectionSort(vector <int> &arr) {
+1. [Selection Sort](https://www.naukri.com/code360/problems/selection-sort_981162?source=youtube&campaign=love_babbar_codestudio2&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio2)
+
+``` cpp
+1. void selectionSort(vector <int> &arr) {
 
     for (int i = 0; i < arr.size() - 1 ; i++) {
         
@@ -17,12 +18,4 @@ void selectionSort(vector <int> &arr) {
         swap(arr[minIndex], arr[i]);
     }
 }
-
-int main (){
-
-    vector <int> a = {5,2,7,9,10};
-    selectionSort (a);
-
-    for (int i = 0; i < a.size(); i++) 
-    cout << a[i] << " ";
-}
+```

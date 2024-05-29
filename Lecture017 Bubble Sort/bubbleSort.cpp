@@ -2,8 +2,8 @@
 #include <iostream>
 using namespace std;
 
-void bubbleSort(vector<int> &arr, int n)
-{   
+void bubbleSort(vector<int> &arr, int n) { 
+
     for(int i = 1; i < n; i++) {
         //for round 1 to n-1
         bool swapped = false;
@@ -16,10 +16,11 @@ void bubbleSort(vector<int> &arr, int n)
                 swapped = true;
             }
         }
+        
         if(swapped == false) {
             //already sorted
             break;
-        }  
+        } 
     }
 }
 

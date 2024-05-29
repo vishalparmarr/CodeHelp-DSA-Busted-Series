@@ -3,21 +3,21 @@ using namespace std;
 
 int getPivot(int arr[], int n) {
 
-    int s = 0;
-    int e = n - 1;
-    int mid = s + (e - s) /2;
+    int start = 0;
+    int end = n - 1;
+    int mid = start + (end - start) / 2;
 
-    while(s<e) {
+    while(start < end ) {
 
         if(arr[mid] >= arr[0])
-            s = mid + 1;
+            start = mid + 1;
         
         else
-            e = mid;
+            end = mid;
         
-        mid = s + (e - s)/2;
+        mid = start + (end - start) / 2;
     }
-    return s;
+    return start;
 }
 
 int main() {
